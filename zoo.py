@@ -47,6 +47,7 @@ class Zoo:
     
 
 zoo1 = Zoo("John's Zoo")
+zoo2 = Zoo("Metro")
 zoo1.add_leon("Nala",5)
 zoo1.add_leon("Simba",6)
 zoo1.add_pinguino("Rey Julien",4)
@@ -55,4 +56,6 @@ zoo1.add_oso("Baloo",10)
 zoo1.add_elefante("Dumbo",10)
 zoo1.print_all_info()
 zoo1.alimentar_a_todos()
+zoo2.add_elefante("dumbo 2",15)
+zoo2.alimentar_a_todos()
 # zoo1.lista_animales()
