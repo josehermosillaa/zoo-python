@@ -60,15 +60,39 @@ while True:
             i = int(input("ingrese la opcion de su zoologico:"))
             print("zoologico seleccionado",zoo[i].name)
             time.sleep(2)
-            seleccion=input("1. Agregar Animal \n2. Mostrar Animales \n3. Alimentar Animales \n4. Salir del Zoologico")
+            seleccion=int(input("1. Agregar Animal \n2. Mostrar Animales \n3. Alimentar Animales \n4. Salir del Zoologico \nIngrese una opcion:"))
             if seleccion == 1:
-                pass
+                while True :
+                    numero = int(input("Que animal desea aregar? : \n1. Leon \n2. Pinguino \n3. Elefante \n4. Oso \n5. Volver atras "))
+                    if numero == 1:
+                        pass
+                    elif numero == 2:
+                        pass
+                    elif numero == 3:
+                        pass
+                    elif numero == 4:
+                        pass
+                    elif numero == 5:
+                        print("los zoologicos agregados son:")
+                        for zoologico in zoo:
+                            print(zoo.index(zoologico),"-",">",zoologico.name)
+                        break
+                    else:
+                        print("La opcion ingresada no es valida")
+                        continue
+                        
             elif seleccion == 2:
                 pass
             elif seleccion == 3:
                 pass
             elif seleccion == 4:
                 break
+            else:
+                print("tecla no reconocida")
+                time.sleep(0.5)
+                print("intente nuevamente")
+                time.sleep(0.5)
+                continue
     elif menu == "3":
         continue
     elif menu == "4":
